@@ -1,0 +1,78 @@
+$button_w : 30px;
+$button_h : 30px;
+
+$button_r : 5px;
+
+
+.lite-pagination{
+  p,a,button{
+    /* ie8 fix for PIE */
+    behavior: url('../lib/PIE-1.0.0/PIE.htc');
+    outline: none;
+  }
+  display: inline-block;
+  *zoom:1;
+  float: right;
+  margin-top: 5px;
+  ul{
+    li{
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+      list-style: none;
+      /* fix up inline-block not valid for ie7,ie6.. */
+      *float: left;
+      *zoom: 1;
+
+      & button{
+        position: relative;
+        z-index: 50;
+        cursor: pointer;
+        font-family : 'Microsoft Yahei';
+        min-width: $button_w;
+        height: $button_h;
+        font-weight: normal;
+
+        background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #f5f5f5));
+        background:-moz-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+        background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+        background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+        background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+        background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+        border:1px solid #dcdcdc;
+        -webkit-border-radius: $button_r;
+        -moz-border-radius: $button_r;
+        border-radius: $button_r;
+        -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+        -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+        box-shadow: inset 0px 0px 0px 0px #ffffff;
+        text-align:center;
+        display:inline-block;
+        text-decoration:none;
+        /* ie8 fix for PIE */
+        behavior: url('../lib/PIE-1.0.0/PIE.htc');
+      }
+
+      & button:active{
+        opacity: 0.5;
+        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        /* ie8 fix for PIE */
+        behavior: url('../lib/PIE-1.0.0/PIE.htc');
+      }
+      &.cur button{
+        background-color: #ccc;
+        background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #e4e4e4), color-stop(1, #ededed));
+        background:-moz-linear-gradient(top, #ccc 5%, #ededed 100%);
+        background:-o-linear-gradient(top, #ccc 5%, #ededed 100%);
+        background:-ms-linear-gradient(top, #ccc 5%, #ededed 100%);
+        background:linear-gradient(to bottom, #ccc 5%, #ededed 100%);
+        background:-webkit-linear-gradient(top, #ccc 5%, #ededed 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#ededed',GradientType=0);
+        /* ie8 fix for PIE */
+        behavior: url('../lib/PIE-1.0.0/PIE.htc');
+      }
+    }
+  }
+}

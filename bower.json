@@ -1,0 +1,29 @@
+{
+  "name": "simple-template",
+  "description": "Simple Template contains a simple file hierarchy to build a front end project, which includes css, sass, js,html,imgs,font and engined by express,hope you like it! -- @BuildFuture",
+  "main": "server.js",
+  "authors": [
+    "samuelzuuka@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "BuildFuture",
+    "Template",
+    "Node",
+    "Web",
+    "Front",
+    "Css",
+    "Hierarchy"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizer": "^2.8.2"
+  }
+}
